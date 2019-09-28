@@ -1,0 +1,22 @@
+{
+  "name": "http-server-client",
+  "version": "1.0.0",
+  "description": "http-server client",
+  "productName": "http-server",
+  "author": "Adrian DC",
+  "backgroundColor": "#FFFFFF",
+  "category": "Utility",
+  "clearCache": "false",
+  "fullscreen": "false",
+  "iconIco": "assets/icon.ico",
+  "iconPng": "assets/icon.png",
+  "license": "Proprietary",
+  "maximize": "false",
+  "readonly": "false",
+  "url": "http://127.0.0.1:8080",
+  "scripts": {
+    "build": "cd ../../ && PACKAGE_PATH=apps/http-server npm run build",
+    "clean": "cd ../../ && npm run clean",
+    "prepare": "cd ../../ && npm run prepare"
+  }
+}

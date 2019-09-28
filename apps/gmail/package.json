@@ -1,0 +1,23 @@
+{
+  "name": "gmail-client",
+  "version": "1.0.0",
+  "description": "GMail client",
+  "productName": "GMail",
+  "author": "Adrian DC",
+  "backgroundColor": "#303030",
+  "category": "Utility",
+  "clearCache": "false",
+  "fullscreen": "false",
+  "iconFavicon": "https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico",
+  "iconIco": "assets/icon.ico",
+  "iconPng": "assets/icon.png",
+  "license": "Proprietary",
+  "maximize": "false",
+  "readonly": "true",
+  "url": "https://www.google.com/gmail",
+  "scripts": {
+    "build": "cd ../../ && PACKAGE_PATH=apps/gmail npm run build",
+    "clean": "cd ../../ && npm run clean",
+    "prepare": "cd ../../ && npm run prepare"
+  }
+}

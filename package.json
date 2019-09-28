@@ -1,0 +1,27 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "electron-installer-debian": "^3.1.0",
+    "electron-installer-redhat": "^3.2.0",
+    "electron-winstaller": "^4.0.0",
+    "fs-extra": "^9.0.1",
+    "nativefier": "^10.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "build:debian": "node ./src/package-debian.js",
+    "build:redhat": "node ./src/package-redhat.js",
+    "build:windows": "node ./src/package-windows.js",
+    "build": "npm-run-all \"build:** -- ${PACKAGE_PATH}\"",
+    "clean": "rimraf ./build ./node_modules ./npm-debug.log ./package-lock.json ./release",
+    "prettier:check": "prettier --list-different './src/**/*.js'",
+    "prettier:write": "prettier --list-different --write './src/**/*.js'",
+    "release:adriandc": "cd ./apps/adriandc/ && npm run build",
+    "release:http-server": "cd ./apps/http-server/ && npm run build",
+    "release:gmail": "cd ./apps/gmail/ && npm run build",
+    "release:jupyter": "cd ./apps/jupyter/ && npm run build",
+    "release:whatsapp": "cd ./apps/whatsapp/ && npm run build",
+    "release": "npm-run-all release:*"
+  }
+}

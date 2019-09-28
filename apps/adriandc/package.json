@@ -1,0 +1,23 @@
+{
+  "name": "adriandc-client",
+  "version": "1.0.0",
+  "description": "Adrian DC website client",
+  "productName": "Adrian DC",
+  "author": "Adrian DC",
+  "backgroundColor": "#FFFFFF",
+  "category": "Utility",
+  "clearCache": "false",
+  "fullscreen": "false",
+  "iconFavicon": "https://adriandc.github.io/images/favicon.ico",
+  "iconIco": "assets/icon.ico",
+  "iconPng": "assets/icon.png",
+  "license": "Proprietary",
+  "maximize": "false",
+  "readonly": "false",
+  "url": "https://adriandc.github.io",
+  "scripts": {
+    "build": "cd ../../ && PACKAGE_PATH=apps/adriandc npm run build",
+    "clean": "cd ../../ && npm run clean",
+    "prepare": "cd ../../ && npm run prepare"
+  }
+}
